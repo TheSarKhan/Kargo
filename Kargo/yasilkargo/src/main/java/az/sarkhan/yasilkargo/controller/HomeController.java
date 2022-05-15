@@ -9,4 +9,8 @@ public class HomeController {
     public String getHome(){
         return "home";
     }
+    @GetMapping(path = "/nav")
+    public String getNav(){
+        return "nav";
+    }
 }

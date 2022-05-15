@@ -11,75 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet"></head>
-    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet"><style>
-.mainNavItem{
-  color: rgb(33, 33, 33);
-  font-size: 24px;
-  transition: 0.7s;
-  font-size: 30px;
-  font-family: 'Signika', sans-serif;
-  text-decoration: none;
-}
-.mainNavItem:hover{
-  color: rgb(103, 244, 9);
- 
-  transition: 0.7s;
-  font-family: 'Signika', sans-serif;
-  text-decoration: none;
-
-}
-#nav-border{
-  padding: 30px; 
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet"> 
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
   <body> 
-<!-- TOP NAV START-->
-    <nav class="nav " style="border-bottom: 3px solid rgb(65, 232, 65);">
-      <span id="numberSpan"><a  class="nav-link"  ><i class="fa fa-phone" aria-hidden="true"></i> +994 50 201 71 64</a></span>
-     <a class="nav-link topNavLinks" href="#">Bloq</a> 
-       <a class="nav-link topNavLinks" id="notAllowedProductsLink" href="#">Qadağa edilmiş məhsullar</a> 
-     
-       <a class="nav-link userTopNav ml-auto" >(Istifadəçi adı) <i style="font-size: 30px;" class="fa fa-user" aria-hidden="true"></i></a> 
-    </nav>
-<!--TOP NAV END-->
-
-<!--MAIN NAV STARTED -->
-<div id="nav-border"> 
- <ul class="nav justify-content-center">
- 
-
-<li class="nav-item">
-    <a class="nav-link mainNavItem" href="#">Haqqımızda</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#">Tariflər</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#">Mağazalar</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#">Xidmətlər</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#">FAQ</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#">Əlaqə</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
-</li>
-<li class="nav-item">
-  <a class="nav-link mainNavItem" href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-</li>
-<li class="nav-item">
-  <a class="nav-link " href="#"><button class="btn btn-warning">Sifariş et</button></a>
-</li>
- </ul>
-
-
-
-</div>
+    <div th:replace="nav :: nav"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

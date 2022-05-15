@@ -39,3 +39,23 @@
 display: none;
   }
 }
+
+.mainNavItem{
+  color: rgb(33, 33, 33);
+  font-size: 24px;
+  transition: 0.7s;
+  font-size: 30px;
+  font-family: 'Signika', sans-serif;
+  text-decoration: none;
+}
+.mainNavItem:hover{
+  color: rgb(103, 244, 9);
+ 
+  transition: 0.7s;
+  font-family: 'Signika', sans-serif;
+  text-decoration: none;
+
+}
+#nav-border{
+  padding: 30px; 
+}
