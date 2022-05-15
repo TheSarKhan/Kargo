@@ -1,0 +1,41 @@
+
+.topNavLinks{
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+  transition: 0.8s;
+  color: grey;
+}
+.topNavLinks:hover{
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  transition: 0.8s;
+  text-decoration: none;
+  color: rgb(74, 70, 70);
+}
+#numberSpan {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 24px;
+  background: -webkit-linear-gradient(rgb(84, 211, 56), rgb(43, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.userTopNav{
+  color: black;
+}
+.userTopNav:hover{
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .topNavLinks{
+    display: none;
+  }
+  #numberSpan {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 784px) {
+  #notAllowedProductsLink{
+display: none;
+  }
+}
